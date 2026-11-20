@@ -125,3 +125,7 @@ func (h Hooks) AfterProposalVote(ctx context.Context, proposalID uint64, voterAd
 func (h Hooks) AfterProposalFailedMinDeposit(ctx context.Context, proposalID uint64) error {
 	return nil
 }
+
+func (h Hooks) AfterProposalCanceled(_ context.Context, _ uint64) error {
+	return nil
+}
